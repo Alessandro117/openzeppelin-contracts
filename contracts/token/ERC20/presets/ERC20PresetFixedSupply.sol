@@ -39,13 +39,13 @@ contract ERC20PresetFixedSupply is ERC20Burnable {
         _uri = uri;
     }
     
-    
     /**
     * @dev Gets the URI.
     * @return string representing the URI of the contract
     */
-    function URI() external view returns (string memory) {
+    function uri() public view virtual override returns (string memory) {
         return _uri;
     }
+
     
 }
