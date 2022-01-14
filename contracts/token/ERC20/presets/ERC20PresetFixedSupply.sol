@@ -26,7 +26,7 @@ contract ERC20PresetFixedSupply is ERC20Burnable {
      */
      
     // Token URI
-    string private _URI;
+    string private _uri;
  
     constructor(
         string memory name,
@@ -36,6 +36,6 @@ contract ERC20PresetFixedSupply is ERC20Burnable {
         address owner
     ) ERC20(name, symbol) {
         _mint(owner, initialSupply);
-        _URI = uri;
+        _uri = uri;
     }
 }
